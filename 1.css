@@ -1,0 +1,120 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    background: #2E015C;
+}
+
+.Flower1 {
+    position: absolute;
+    width: 23.75%;
+    height: 46%;
+    left: 67.3%;
+    top: 8%;
+    background-image: url("images_Figma/flower1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Flower2 {
+    position: absolute;
+    width: 24.3%;
+    height: 52%;
+    left: 7%;
+    top: 33.5%;
+    background-image: url("images_Figma/flower2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.Main2 {
+    position: absolute;
+    width: 57.5%;
+    height: 76.1%;
+    left: 21.25%;
+    top: 12.8%;
+    background: linear-gradient(261.38deg, #0060D9 18.47%, #004193 93.48%);
+    border-radius: 60px;
+}
+
+.Main3 {
+    position: absolute;
+    width: 57%;
+    height: 75.2%;
+    left: 21.25%;
+    top: 12.8%;
+    background: linear-gradient( 240deg, #003dce -3.6%, rgba(20, 163, 252, 0.795) 50%, #003dce 95%);
+    border-radius: 51px;
+}
+
+.span {
+    position: absolute;
+    width: 53.7%;
+    height: 29.3%;
+    left: 24.6%;
+    top: 13.4%;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    /* or 182% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.imageForSlider {
+    /*position: absolute;*/
+    width: 8.2%;
+    margin-top: 36.7%;
+    margin-right: 9%;
+    margin-left: 6%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 30px;
+    display: inline-flex;
+}
+
+.imageForSlider div,
+.imageForSlider img {
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.imageForSlider img:hover {
+    transform: translate(-5%, -5%);
+    box-shadow: 5px 5px 1px 1px #004BAA;
+}
+
+
+/*.blockForImages {
+    display: inline-flex;
+}*/
+
+.polosa {
+    display: flex;
+    position: absolute;
+    width: 62%;
+    height: 1%;
+    left: 20.5%;
+    top: 5.4%;
+    background: #0096EC;
+    border-radius: 10px;
+    /* margin-left: auto;
+    margin-right: auto;*/
+}
+
+.itemSlider {
+    width: 25%;
+    border-radius: 100px;
+}
+
+.active {
+    background: #00ec12;
+}

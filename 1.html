@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+
+<body>
+
+    <div class="Flower1"></div>
+    <div class="Flower2"></div>
+    <div class="Main2"></div>
+    <div class="Main3">
+        <div class="polosa">
+            <div class="itemSlider active" data-span="1" onclick="myFunction(this)"></div>
+            <div class="itemSlider" data-span="2" onclick="myFunction(this)"></div>
+            <div class="itemSlider" data-span="3" onclick="myFunction(this)"></div>
+            <div class="itemSlider" data-span="4" onclick="myFunction(this)"></div>
+        </div>
+        <span class="span" id="span_1">Начинаем с простенького. Судя по мультфильму,
+            Чебурашка и Гена много гуляли и ходили пешком.
+            А вот если бы они устали,
+            то могли бы спокойно воспользоваться любым другим способом передвижения,
+            кроме одного. Какого?</span>
+        <span class="span" id="span_2">Начинаем с простенького. Судя по мультфильму,
+            Чебурашка и Гена много гуляли и ходили пешком.
+            А вот если бы они устали,
+            то могли бы спокойно воспользоваться любым другим способом передвижения,
+            кроме одного. Какого?</span>
+        <span class="span" id="span_3">Начинаем с простенького. Судя по мультфильму,
+            Чебурашка и Гена много гуляли и ходили пешком.
+            А вот если бы они устали,
+            то могли бы спокойно воспользоваться любым другим способом передвижения,
+            кроме одного. Какого?</span>
+        <span class="span" id="span_4">Начинаем с простенького. Судя по мультфильму,
+            Чебурашка и Гена много гуляли и ходили пешком.
+            А вот если бы они устали,
+            то могли бы спокойно воспользоваться любым другим способом передвижения,
+            кроме одного. Какого?</span>
+        <div class="polosa">
+            <div id="itemSlider_1" class="green itemSlider active"></div>
+            <div id="itemSlider_2" class="green itemSlider"></div>
+            <div id="itemSlider_3" class="green itemSlider"></div>
+            <div id="itemSlider_4" class="green itemSlider"></div>
+        </div>
+        <div class="blockForImages">
+            <div class="imageForSlider">
+                <div><img onclick="function2(1)" src="images_Figma/image 1.png"></div>
+            </div>
+            <div class="imageForSlider">
+                <div><img onclick="function2(2)" src="images_Figma/image 2.png"></div>
+            </div>
+            <div class="imageForSlider">
+                <div><img onclick="function2(3)" src="images_Figma/image 3.png"></div>
+            </div>
+            <div class="imageForSlider">
+                <div><img onclick="function2(4)" src="images_Figma/image 4.png"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function myFunction(element) {
+        let nodeListLevel = document.querySelectorAll(".itemSlider"),
+            nodeListText = document.querySelectorAll(".span"),
+            number = element.dataset.span;
+        for (let index = 0; index < nodeListLevel.length; index++) {
+            nodeListLevel[index].classList.remove("active");
+            nodeListText[index].style.display = "none";
+        }
+        element.classList.add("active");
+        document.getElementById("span_" + number).style.display = "block";
+    }
+
+    function function2(params) {
+        let nodeListLevel = document.querySelectorAll(".green")
+        for (let index = 0; index < nodeListLevel.length; index++) {
+            nodeListLevel[index].classList.remove("active");
+        }
+        document.getElementById("itemSlider_" + params).classList.add("active");
+    }
+</script>
